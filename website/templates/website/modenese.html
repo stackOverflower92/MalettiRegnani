@@ -1,0 +1,11 @@
+{% include 'website/header.html' %}
+
+<section id="modenese" class="container content-section text-center">
+    {% if country_code == 'IT' %}
+        <p>{{ descriptions.modenese_it }}</p>
+    {% else %}
+        <p>{{ descriptions.modenese_en }}</p>
+    {% endif %}
+</section>
+
+{% include 'website/footer.html' %}
